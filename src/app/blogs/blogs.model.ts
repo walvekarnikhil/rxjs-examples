@@ -5,7 +5,7 @@ export const CATEGORIES = [
   'semantic-versioning', 'release-management', 'ionic-framework', 'ionic', 'surveys',
   'debugging', 'components', 'schematics', 'breaking-changes', 'frontend', 'materials',
   'accessibility', 'codelyzer', 'semanticweb', 'capacitor', 'hybrid-app-development',
-  'conference', 'community'];
+  'conference', 'community'].sort();
 export interface Blog {
   title: string;
   pubDate: Date;

@@ -7,9 +7,9 @@ import { BlogsService } from '../blogs/blogs.service';
   styleUrls: ['./route-param-data-filter.component.scss']
 })
 export class RouteParamDataFilterComponent implements OnInit {
-
+  categories = this.blogService.getCategories();
+  blogs = this.blogService.getBlogs([]);
   constructor(private blogService: BlogsService) {
-    console.log(blogService.getBlogs([]));
   }
 
   ngOnInit() {
